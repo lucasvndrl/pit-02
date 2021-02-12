@@ -1,12 +1,17 @@
-import React from "react";
+import React from 'react'
+import Card from './components/Card';
+import Header from './components/Header';
 
-function App () {
+const App = () => {
+
   return (
-    <>
-      <div className="app">Hello World</div>
-      <div>oooie</div>
-    </>
-  )
-}
+    <div className="">
+      <Header title="PITANG 2"/>
+      <div className="p-4">
+        <Card title="Home"/>
+      </div>
+    </div>
+  );
+};
 
 export default App;
