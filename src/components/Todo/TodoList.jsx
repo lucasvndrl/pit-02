@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Row, Button, Table } from 'react-bootstrap';
 import { toast } from 'react-toastify';
 import axios from '../../utils/api';
@@ -119,6 +120,10 @@ const TodoList = ({ todos, setTodos }) => {
                 >
                   Remover
                 </Button>
+
+                <Link to={`/todo/${todo.id}`} className="btn btn-primary">
+                  Info
+                </Link>
               </td>
             </tr>
           ))}

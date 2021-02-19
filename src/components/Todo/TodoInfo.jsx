@@ -20,7 +20,7 @@ export default function TodoInfo({ todoId }) {
 
   return (
     <div>
-      <Card style={{ width: '18rem' }}>
+      <Card style={{ width: '18rem' }} className="m-4">
         <Card.Body>
           <Card.Title>Todo {todoId}</Card.Title>
           <Card.Subtitle className="mb-2 text-muted">Informações</Card.Subtitle>
