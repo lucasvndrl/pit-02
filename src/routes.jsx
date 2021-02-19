@@ -4,7 +4,8 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Index from './pages';
 import Header from './components/Header';
 import Feature from './pages/Features';
-import Todo from './pages/Todos';
+import TodoList from './pages/Todos';
+import TodoInfo from './pages/Todo';
 
 const routes = [
   {
@@ -14,8 +15,14 @@ const routes = [
   },
   {
     path: '/todo',
-    component: Todo,
+    component: TodoList,
     name: 'Todo',
+  },
+  {
+    path: '/todo/:id',
+    component: TodoInfo,
+    name: 'Todo',
+    notShow: true,
   },
   {
     path: '/feature',
@@ -29,12 +36,7 @@ const Routes = () => (
     <Header title="Pitang 2" routes={routes} />
     <Switch>
       {routes.map(({ component, path }) => (
-        <Route
-          exact
-          key={path}
-          path={path}
-          component={component}
-        />
+        <Route exact key={path} path={path} component={component} />
       ))}
     </Switch>
   </BrowserRouter>

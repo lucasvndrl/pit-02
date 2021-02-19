@@ -1,9 +1,5 @@
 import React from 'react';
 
 export default function index() {
-  return (
-    <div>
-      Página Home
-    </div>
-  );
+  return <div>Página Home</div>;
 }

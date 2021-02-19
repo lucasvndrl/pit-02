@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
-import {
-  Row, Col, Form, Button,
-} from 'react-bootstrap';
+import { Row, Col, Form, Button } from 'react-bootstrap';
 import { toast } from 'react-toastify';
 import axios from '../../utils/api';
 

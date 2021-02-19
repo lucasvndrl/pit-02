@@ -12,5 +12,5 @@ ReactDOM.render(
     <ToastContainer position="bottom-left" />
     <Routes />
   </React.StrictMode>,
-  document.getElementById('root'),
+  document.getElementById('root')
 );

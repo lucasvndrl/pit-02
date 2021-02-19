@@ -3,7 +3,7 @@ import axios from '../../utils/api';
 import TodoList from './TodoList';
 import TodoForm from './TodoForm';
 
-export default function index() {
+export default function Todos() {
   const [todos, setTodos] = useState([]);
 
   const fetchTodos = async () => {

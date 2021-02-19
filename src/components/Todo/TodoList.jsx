@@ -1,7 +1,5 @@
 import React from 'react';
-import {
-  Row, Button, Table,
-} from 'react-bootstrap';
+import { Row, Button, Table } from 'react-bootstrap';
 import { toast } from 'react-toastify';
 import axios from '../../utils/api';
 
@@ -98,7 +96,6 @@ const TodoList = ({ todos, setTodos }) => {
                   className="m-2"
                   type="checkbox"
                 />
-
               </td>
               <td width="70%">
                 {todo.edit ? (
@@ -112,7 +109,6 @@ const TodoList = ({ todos, setTodos }) => {
                     {todo.title}
                   </span>
                 )}
-
               </td>
               <td>
                 <Button onClick={() => onEditTodo(todo)}>Editar</Button>
